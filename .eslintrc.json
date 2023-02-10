@@ -1,0 +1,35 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard",
+        "eslint:recommended",
+        "plugin:prettier/recommended"
+    ],
+    "overrides": [],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "react/prop-types": "warn",
+        "prettier/prettier": [
+            "off",
+            {
+                "semi": true,
+                "tabWidth": 4,
+                "printWidth": 100,
+                "singleQuote": true,
+                "trailingComma": "none",
+                "jsxBracketSameLine": true,
+                "endOfLine": "auto"
+            }
+        ]
+    }
+}
